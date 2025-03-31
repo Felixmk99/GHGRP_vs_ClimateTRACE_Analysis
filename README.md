@@ -7,7 +7,7 @@ This repository contains the Jupyter Notebook and datasets used for analyzing di
 ## 📂 Folder Structure
 
 ```
-📦 YOUR_REPO_NAME
+📦 GHGRP_vs_ClimateTRACE_Analysis
  ┣ 📂 data                     # All datasets stored here
  ┃ ┣ 📜 flight_2015.csv        # GHGRP data for 2015
  ┃ ┣ 📜 flight_2016.csv        # GHGRP data for 2016
