@@ -1,4 +1,4 @@
-📊 Master Thesis: GHGRP vs. Climate TRACE Data Analysis
+# 📊 Master Thesis: GHGRP vs. Climate TRACE Data Analysis
 
 This repository contains the Jupyter Notebook and required scripts for analyzing discrepancies between GHGRP self-reported emissions data and Climate TRACE satellite-based emissions data. The analysis includes machine learning techniques, Bayesian modeling, and data preprocessing to ensure accuracy.
 
