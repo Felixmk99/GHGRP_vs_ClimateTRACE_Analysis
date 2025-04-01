@@ -69,18 +69,18 @@ Then open analysis.ipynb and run the notebook.
 ⸻
 
 📈 Data Sources
-	1.	GHGRP (Greenhouse Gas Reporting Program)
-	•	Self-reported emissions data from industrial facilities.
-	•	Dataset: data/flight_YYYY.csv
-	2.	Climate TRACE
-	•	Satellite-based emissions tracking.
-	•	Dataset: data/*_emissions_sources.csv
-	3.	ZIP-COUNTY Mapping
-	•	Used to map ZIP codes to county-level emissions.
-	•	File: data/ZIP-COUNTY-FIPS_2017-06.csv
-	4.	Ownership Data
-	•	Maps facility names to parent companies.
-	•	File: data/oil-and-gas-production-and-transport_emissions_sources_ownership.csv
+1.	GHGRP (Greenhouse Gas Reporting Program)
+- Self-reported emissions data from industrial facilities.
+- Dataset: data/flight_YYYY.csv
+2.	Climate TRACE
+- Satellite-based emissions tracking.
+- Dataset: data/*_emissions_sources.csv
+3.	ZIP-COUNTY Mapping
+- Used to map ZIP codes to county-level emissions.
+- File: data/ZIP-COUNTY-FIPS_2017-06.csv
+4.	Ownership Data
+- Maps facility names to parent companies.
+- File: data/oil-and-gas-production-and-transport_emissions_sources_ownership.csv
 
 ⸻
 
@@ -93,8 +93,11 @@ Since large datasets should not be committed to GitHub, make sure to only upload
 🧠 Key Features
 
 ✅ Automated Data Preprocessing (Cleaning, Merging, Normalization)
+
 ✅ Facility-Level Emissions Matching (Fuzzy Matching & Geolocation)
+
 ✅ Bayesian Hierarchical Modeling (Facility, Parent Company, Year)
+
 ✅ Custom Data Visualization (Emissions Trends & Uncertainty Plots)
 
 ⸻
