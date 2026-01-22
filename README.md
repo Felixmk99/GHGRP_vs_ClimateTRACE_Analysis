@@ -10,9 +10,7 @@
 
 ## Abstract
 
-This repository contains the complete replication code and data preparation scripts for the analysis presented in "Industrial architecture, not corporate governance, drives the divergence between compliance and surveillance carbon accounting." The study examines discrepancies between bottom-up regulatory emissions data (EPA's Greenhouse Gas Reporting Program, GHGRP) and top-down satellite-based estimates (Climate TRACE) across 31,145 facility-year observations (2015-2023).
 
-**Key Finding:** Using Hierarchical Linear Modeling (HLM), we demonstrate that industry-level heterogeneity explains ~59% of variance in reporting discrepancies, while parent-company effects are minimal. This suggests that measurement precision is fundamentally determined by industrial process characteristics (e.g., fugitive vs. combustion emissions) rather than corporate governance practices.
 
 ---
 
