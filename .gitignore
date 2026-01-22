@@ -172,3 +172,29 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Project-specific: Data files (too large and may have licensing restrictions)
+data/*.csv
+data/*.xlsx
+data/*.sas7bdat
+data/*.json
+*.csv
+*.xlsx
+*.sas7bdat
+!requirements.txt
+!requirements.R
+
+# Project-specific: Generated outputs
+figures/*.png
+figures/*.pdf
+*.png
+*.pdf
+top100_*.csv
+
+# R workspace files
+.RData
+.Rhistory
+.Rproj.user/
+
+# Jupyter notebook checkpoints (already covered but being explicit)
+.ipynb_checkpoints/

@@ -1,3 +1,38 @@
+#!/usr/bin/env python3
+"""
+Add_COMPUSTAT_vars.py
+
+Purpose:
+--------
+Adds industry-level financial variables from Compustat to the GHGRP dataset.
+Aggregates firm-level financial metrics (ROA, leverage, R&D intensity, capital intensity)
+to 3-digit NAICS industry-year means, then merges with facility-level data.
+
+Input:
+------
+- SAS file: Compustat North America Fundamentals Annual database (SAS format)
+- GHGRP CSV: Facility-level dataset with NAICS codes
+
+Output:
+-------
+- Model-ready CSV with industry financial covariates (Z-score normalized)
+
+Key Variables Created:
+----------------------
+- ind_ROA_z: Industry return on assets (Z-score)
+- ind_Leverage_z: Industry leverage ratio (Z-score)
+- ind_RD_intensity_z: Industry R&D intensity (Z-score)
+- ind_at_z: Industry capital intensity (log total assets, Z-score)
+
+Usage:
+------
+1. Update paths at top of script (SAS_PATH, GHGRP_CSV, OUT_CSV)
+2. Run: python Add_COMPUSTAT_vars.py
+
+Note: Handles missing data via mean imputation and creates Z-score normalized
+variables for use in hierarchical linear models.
+"""
+
 import pandas as pd
 import numpy as np
 import os

@@ -1,4 +1,51 @@
 # ============================================================
+# GHGRP_CT_HLM_main_analysis.r
+#
+# Purpose:
+# --------
+# Primary Hierarchical Linear Model (HLM) analysis for decomposing variance
+# in emission discrepancies between GHGRP (compliance) and Climate TRACE
+# (surveillance) data sources.
+#
+# Paper: "Industrial architecture, not corporate governance, drives the 
+#         divergence between compliance and surveillance carbon accounting"
+#
+# Key Analyses:
+# ------------
+# 1. Magnitude model: log1p(|discrepancy| / emissions) ~ size + year + REs
+# 2. Signed model: signed discrepancy ~ size + year + REs (directional bias)
+# 3. Variance decomposition: Industry vs. Parent vs. Facility vs. County
+# 4. Industry BLUPs: Best Linear Unbiased Predictors for each NAICS3 sector
+# 5. Parent company BLUPs: With FDR correction for multiple testing
+# 6. Between vs. within industry decomposition
+#
+# Input:
+# ------
+# CSV file: "ghgrp_CT_data.csv" (or specified in CSV_PATH)
+# Required columns: ghgrp_year, ghgrp_id, ghgrp_parent_companies, 
+#                   ghgrp_county_name, ghgrp_emissions_tons, NAICS3,
+#                   emissions_discrepancy, ind_ROA_z, ind_Leverage_z,
+#                   ind_RD_intensity_z, ind_at_z
+#
+# Output:
+# -------
+# Console output: Variance components, BLUPs, model diagnostics
+# CSV files: top100_facilities_overstatement_signed_tons.csv
+#            top100_facilities_understatement_signed_tons.csv
+#
+# Usage:
+# ------
+# 1. Set CSV_PATH variable (line 34) to point to your data file
+# 2. Run: Rscript GHGRP_CT_HLM_main_analysis.r
+#    OR source in R: source("GHGRP_CT_HLM_main_analysis.r")
+#
+# Technical Notes:
+# ----------------
+# - Uses REML estimation with multiple optimizer fallbacks
+# - Natural spline for facility size (3 df, orthonormalized)
+# - Folds rare categories (<5 facilities) into "Other" for stability
+# - Winsorizes dependent variable at 99.5th percentile
+# ============================================================
 # HLM for GHGRP discrepancies — lean, robust, publication-ready
 # - Keep ALL REs: facility + parent + county + NAICS3 (no dropping)
 # - MIN_IDS_* = 5 (distinct facilities) for stable REs

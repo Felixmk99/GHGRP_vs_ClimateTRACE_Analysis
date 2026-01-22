@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Kania
+    given-names: Felix
+    email: felixkania@gmail.com
+    affiliation: Technical University of Munich, School of Management
+  - family-names: Vedula
+    given-names: Siddharth
+    email: vedulas@miamioh.edu
+    affiliation: Miami University, Farmer School of Business
+  - family-names: Fitza
+    given-names: Markus
+    email: m.fitza@fs.de
+    affiliation: Frankfurt School of Finance and Management
+  - family-names: Gurney
+    given-names: Kevin
+    email: kevin.gurney@nau.edu
+    affiliation: Northern Arizona University
+title: "Industrial architecture, not corporate governance, drives the divergence between compliance and surveillance carbon accounting"
+version: 1.0.0
+date-released: 2026-01-01
+license: MIT
+repository-code: "https://github.com/Felixmk99/GHGRP_vs_ClimateTRACE_Analysis"
+keywords:
+  - carbon accounting
+  - emissions reporting
+  - hierarchical linear modeling
+  - climate policy
+  - GHGRP
+  - Climate TRACE
+abstract: "Analysis code for examining discrepancies between bottom-up regulatory emissions data (EPA GHGRP) and top-down satellite-based estimates (Climate TRACE) using Hierarchical Linear Modeling."
+
