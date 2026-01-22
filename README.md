@@ -270,17 +270,10 @@ See `LICENSE` file for details.
 
 ## Contact
 
-For questions about the code or analysis, please contact:
-- **Felix Kania:** felixkania@gmail.com
-- **Siddharth Vedula:** vedulas@miamioh.edu
+For questions about the code or analysis, please contact: **Felix Kania:** felixkania@gmail.com
 
 ---
 
-## Acknowledgments
-
-We thank the U.S. EPA, Climate TRACE, S&P Global (Compustat), U.S. Bureau of Labor Statistics, and the U.S. Census Bureau for providing the data used in this analysis.
-
----
 
 ## Notes for Reviewers
 
